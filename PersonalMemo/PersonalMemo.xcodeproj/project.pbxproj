@@ -7,21 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		591D2D2A213D0733007D9335 /* MemoTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591D2D29213D0733007D9335 /* MemoTCell.swift */; };
+		591D2D32213D0806007D9335 /* MemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591D2D31213D0806007D9335 /* MemoData.swift */; };
+		591D2D34213D0C97007D9335 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59684CD8213CFB2D001FFE4C /* Info.plist */; };
+		591D2D37213D0D04007D9335 /* PersonalMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 591D2D35213D0D04007D9335 /* PersonalMemo.xcdatamodeld */; };
 		59684CCA213CFB2C001FFE4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59684CC9213CFB2C001FFE4C /* AppDelegate.swift */; };
 		59684CCF213CFB2C001FFE4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59684CCD213CFB2C001FFE4C /* Main.storyboard */; };
-		59684CD2213CFB2C001FFE4C /* PersonalMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 59684CD0213CFB2C001FFE4C /* PersonalMemo.xcdatamodeld */; };
 		59684CD4213CFB2D001FFE4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59684CD3213CFB2D001FFE4C /* Assets.xcassets */; };
 		59684CD7213CFB2D001FFE4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59684CD5213CFB2D001FFE4C /* LaunchScreen.storyboard */; };
+		59684CDF213D05CB001FFE4C /* MemoListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59684CDE213D05CB001FFE4C /* MemoListTVC.swift */; };
+		59684CE1213D05F9001FFE4C /* MemoFromVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59684CE0213D05F9001FFE4C /* MemoFromVC.swift */; };
+		59684CE3213D0606001FFE4C /* MemoReadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59684CE2213D0606001FFE4C /* MemoReadVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		591D2D29213D0733007D9335 /* MemoTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoTCell.swift; sourceTree = "<group>"; };
+		591D2D31213D0806007D9335 /* MemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoData.swift; sourceTree = "<group>"; };
+		591D2D36213D0D04007D9335 /* PersonalMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PersonalMemo.xcdatamodel; sourceTree = "<group>"; };
 		59684CC6213CFB2C001FFE4C /* PersonalMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59684CC9213CFB2C001FFE4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59684CCE213CFB2C001FFE4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		59684CD1213CFB2C001FFE4C /* PersonalMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PersonalMemo.xcdatamodel; sourceTree = "<group>"; };
 		59684CD3213CFB2D001FFE4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59684CD6213CFB2D001FFE4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		59684CD8213CFB2D001FFE4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59684CD8213CFB2D001FFE4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = PersonalMemo/Info.plist; sourceTree = "<group>"; };
+		59684CDE213D05CB001FFE4C /* MemoListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListTVC.swift; sourceTree = "<group>"; };
+		59684CE0213D05F9001FFE4C /* MemoFromVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoFromVC.swift; sourceTree = "<group>"; };
+		59684CE2213D0606001FFE4C /* MemoReadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoReadVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,10 +46,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		591D2D2B213D073E007D9335 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				591D2D29213D0733007D9335 /* MemoTCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		591D2D2C213D0777007D9335 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				591D2D31213D0806007D9335 /* MemoData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		591D2D2D213D0790007D9335 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				591D2D2C213D0777007D9335 /* Model */,
+				591D2D2E213D07AA007D9335 /* View */,
+				59684CE4213D0615001FFE4C /* ViewController */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		591D2D2E213D07AA007D9335 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				591D2D2B213D073E007D9335 /* TableViewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		591D2D2F213D07B9007D9335 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				59684CD3213CFB2D001FFE4C /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		591D2D30213D07C9007D9335 /* Supportion File */ = {
+			isa = PBXGroup;
+			children = (
+				59684CD5213CFB2D001FFE4C /* LaunchScreen.storyboard */,
+			);
+			path = "Supportion File";
+			sourceTree = "<group>";
+		};
 		59684CBD213CFB2C001FFE4C = {
 			isa = PBXGroup;
 			children = (
 				59684CC8213CFB2C001FFE4C /* PersonalMemo */,
+				59684CD8213CFB2D001FFE4C /* Info.plist */,
+				591D2D35213D0D04007D9335 /* PersonalMemo.xcdatamodeld */,
 				59684CC7213CFB2C001FFE4C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,14 +117,39 @@
 		59684CC8213CFB2C001FFE4C /* PersonalMemo */ = {
 			isa = PBXGroup;
 			children = (
-				59684CC9213CFB2C001FFE4C /* AppDelegate.swift */,
-				59684CCD213CFB2C001FFE4C /* Main.storyboard */,
-				59684CD3213CFB2D001FFE4C /* Assets.xcassets */,
-				59684CD5213CFB2D001FFE4C /* LaunchScreen.storyboard */,
-				59684CD8213CFB2D001FFE4C /* Info.plist */,
-				59684CD0213CFB2C001FFE4C /* PersonalMemo.xcdatamodeld */,
+				59684CE5213D062C001FFE4C /* AppDelegate */,
+				591D2D2D213D0790007D9335 /* Source */,
+				59684CE6213D0635001FFE4C /* Storyboard */,
+				591D2D2F213D07B9007D9335 /* Resource */,
+				591D2D30213D07C9007D9335 /* Supportion File */,
 			);
 			path = PersonalMemo;
+			sourceTree = "<group>";
+		};
+		59684CE4213D0615001FFE4C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				59684CDE213D05CB001FFE4C /* MemoListTVC.swift */,
+				59684CE2213D0606001FFE4C /* MemoReadVC.swift */,
+				59684CE0213D05F9001FFE4C /* MemoFromVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		59684CE5213D062C001FFE4C /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				59684CC9213CFB2C001FFE4C /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		59684CE6213D0635001FFE4C /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				59684CCD213CFB2C001FFE4C /* Main.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				591D2D34213D0C97007D9335 /* Info.plist in Resources */,
 				59684CD7213CFB2D001FFE4C /* LaunchScreen.storyboard in Resources */,
 				59684CD4213CFB2D001FFE4C /* Assets.xcassets in Resources */,
 				59684CCF213CFB2C001FFE4C /* Main.storyboard in Resources */,
@@ -135,7 +224,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59684CD2213CFB2C001FFE4C /* PersonalMemo.xcdatamodeld in Sources */,
+				59684CDF213D05CB001FFE4C /* MemoListTVC.swift in Sources */,
+				59684CE3213D0606001FFE4C /* MemoReadVC.swift in Sources */,
+				591D2D2A213D0733007D9335 /* MemoTCell.swift in Sources */,
+				591D2D37213D0D04007D9335 /* PersonalMemo.xcdatamodeld in Sources */,
+				591D2D32213D0806007D9335 /* MemoData.swift in Sources */,
+				59684CE1213D05F9001FFE4C /* MemoFromVC.swift in Sources */,
 				59684CCA213CFB2C001FFE4C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +375,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PersonalMemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,6 +393,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PersonalMemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -334,13 +430,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		59684CD0213CFB2C001FFE4C /* PersonalMemo.xcdatamodeld */ = {
+		591D2D35213D0D04007D9335 /* PersonalMemo.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				59684CD1213CFB2C001FFE4C /* PersonalMemo.xcdatamodel */,
+				591D2D36213D0D04007D9335 /* PersonalMemo.xcdatamodel */,
 			);
-			currentVersion = 59684CD1213CFB2C001FFE4C /* PersonalMemo.xcdatamodel */;
-			path = PersonalMemo.xcdatamodeld;
+			currentVersion = 591D2D36213D0D04007D9335 /* PersonalMemo.xcdatamodel */;
+			name = PersonalMemo.xcdatamodeld;
+			path = PersonalMemo/PersonalMemo.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
