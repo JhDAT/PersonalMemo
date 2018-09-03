@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="V4L-QY-RyW">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -74,6 +74,11 @@
                                         <constraint firstItem="aLB-6h-Qpu" firstAttribute="top" secondItem="9og-ug-Vmi" secondAttribute="top" constant="10" id="rJd-Hx-lre"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="contents" destination="llg-jZ-cJy" id="mTz-ZF-JS7"/>
+                                    <outlet property="regdate" destination="aLB-6h-Qpu" id="t5m-3o-aZW"/>
+                                    <outlet property="subject" destination="GOV-WD-uhW" id="ltW-rt-JWp"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="memoCellWithImage" rowHeight="80" id="QfD-tu-ETf" customClass="MemoTCell" customModule="PersonalMemo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="108" width="375" height="80"/>
@@ -133,6 +138,12 @@
                                         <constraint firstItem="v0F-2s-2HF" firstAttribute="leading" secondItem="LW1-z5-0CV" secondAttribute="trailing" constant="10" id="kPT-nf-cc3"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="contents" destination="Fgf-t3-kmG" id="LPe-fU-3nl"/>
+                                    <outlet property="img" destination="Ixs-hf-iXe" id="J9B-zm-rUJ"/>
+                                    <outlet property="regdate" destination="v0F-2s-2HF" id="4iw-ZL-snH"/>
+                                    <outlet property="subject" destination="LW1-z5-0CV" id="Jda-hN-jNp"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -244,10 +255,21 @@
                         <rightBarButtonItems>
                             <barButtonItem systemItem="camera" id="Wib-hO-Yo8">
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="pick:" destination="ffK-SN-DnY" id="63l-fC-7Qp"/>
+                                </connections>
                             </barButtonItem>
-                            <barButtonItem systemItem="save" id="9lR-eH-rWo"/>
+                            <barButtonItem systemItem="save" id="9lR-eH-rWo">
+                                <connections>
+                                    <action selector="save:" destination="ffK-SN-DnY" id="SxW-Ny-0sR"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="contents" destination="rqs-lp-ukQ" id="24Z-8p-78j"/>
+                        <outlet property="preview" destination="NFW-iS-SkY" id="ITD-pT-lGw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="011-su-2Tc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
