@@ -166,10 +166,10 @@
             </objects>
             <point key="canvasLocation" x="1775.2" y="-60.591133004926114"/>
         </scene>
-        <!--Title-->
+        <!--MemoRead-->
         <scene sceneID="DBW-ED-qb7">
             <objects>
-                <viewController id="gGN-r6-gfO" customClass="MemoReadVC" customModule="PersonalMemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemoRead" title="MemoRead" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gGN-r6-gfO" customClass="MemoReadVC" customModule="PersonalMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tby-Tf-zUr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -211,6 +211,11 @@
                         <viewLayoutGuide key="safeArea" id="Hzf-Lg-lcd"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="M5l-1X-35b"/>
+                    <connections>
+                        <outlet property="contents" destination="amC-Sv-ojr" id="uGO-Ai-fEd"/>
+                        <outlet property="img" destination="13q-k9-sXX" id="iAI-K2-Pwr"/>
+                        <outlet property="subject" destination="sjt-hZ-z9e" id="KU5-rX-4xH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wij-pf-owt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

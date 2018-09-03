@@ -9,11 +9,25 @@
 import UIKit
 
 class MemoReadVC: UIViewController {
+    
+    var param : MemoData?
 
+    //Mark: - IBOutlet
+    @IBOutlet weak var subject: UILabel!
+    @IBOutlet weak var contents: UILabel!
+    @IBOutlet weak var img: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        subject.text = param?.title
+        contents.text = param?.contents
+        img.image = param?.image
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd일 HH:mm분에 작성됨"
+        let dateString = formatter.string(from: (param?.regdate)!)
+        
+        self.navigationItem.title = dateString
     }
 
     override func didReceiveMemoryWarning() {
