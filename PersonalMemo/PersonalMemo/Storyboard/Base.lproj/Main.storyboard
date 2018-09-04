@@ -88,7 +88,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="글의 제목" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LW1-z5-0CV">
-                                            <rect key="frame" x="96" y="11" width="162" height="21"/>
+                                            <rect key="frame" x="86" y="11" width="172" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="gRP-aa-zbh"/>
                                             </constraints>
@@ -97,7 +97,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="글의 내용" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgf-t3-kmG">
-                                            <rect key="frame" x="96" y="37" width="162" height="30"/>
+                                            <rect key="frame" x="86" y="37" width="172" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="geY-w6-ecS"/>
                                             </constraints>
@@ -106,7 +106,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0F-2s-2HF" userLabel="날짜">
-                                            <rect key="frame" x="268" y="21" width="65" height="38"/>
+                                            <rect key="frame" x="268" y="21" width="65" height="25.666666666666671"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="65" id="hEX-7v-TqC"/>
                                             </constraints>
@@ -117,9 +117,10 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ixs-hf-iXe">
-                                            <rect key="frame" x="16" y="11" width="70" height="58"/>
+                                            <rect key="frame" x="16" y="11" width="60" height="60"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="Ixs-hf-iXe" secondAttribute="height" multiplier="41:34" id="AAG-nL-Ob7"/>
+                                                <constraint firstAttribute="height" constant="60" id="9Ox-RH-OAC"/>
+                                                <constraint firstAttribute="width" secondItem="Ixs-hf-iXe" secondAttribute="height" multiplier="1:1" id="AAG-nL-Ob7"/>
                                             </constraints>
                                         </imageView>
                                     </subviews>
