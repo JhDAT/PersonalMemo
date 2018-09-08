@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00157ADC70966A03886C63F7 /* Pods_PersonalMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F62C45E50865C79145F528A /* Pods_PersonalMemo.framework */; };
 		591D2D2A213D0733007D9335 /* MemoTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591D2D29213D0733007D9335 /* MemoTCell.swift */; };
 		591D2D32213D0806007D9335 /* MemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591D2D31213D0806007D9335 /* MemoData.swift */; };
-		591D2D34213D0C97007D9335 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59684CD8213CFB2D001FFE4C /* Info.plist */; };
 		591D2D37213D0D04007D9335 /* PersonalMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 591D2D35213D0D04007D9335 /* PersonalMemo.xcdatamodeld */; };
+		5948C319214371B500699FE8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5948C318214371B500699FE8 /* GoogleService-Info.plist */; };
 		59684CCA213CFB2C001FFE4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59684CC9213CFB2C001FFE4C /* AppDelegate.swift */; };
 		59684CCF213CFB2C001FFE4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59684CCD213CFB2C001FFE4C /* Main.storyboard */; };
 		59684CD4213CFB2D001FFE4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59684CD3213CFB2D001FFE4C /* Assets.xcassets */; };
@@ -21,9 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0AD8A6C3CBFE7E1A6CF4C257 /* Pods-PersonalMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalMemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PersonalMemo/Pods-PersonalMemo.debug.xcconfig"; sourceTree = "<group>"; };
 		591D2D29213D0733007D9335 /* MemoTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoTCell.swift; sourceTree = "<group>"; };
 		591D2D31213D0806007D9335 /* MemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoData.swift; sourceTree = "<group>"; };
 		591D2D36213D0D04007D9335 /* PersonalMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PersonalMemo.xcdatamodel; sourceTree = "<group>"; };
+		5948C318214371B500699FE8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "PersonalMemo/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		59684CC6213CFB2C001FFE4C /* PersonalMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59684CC9213CFB2C001FFE4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59684CCE213CFB2C001FFE4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -33,6 +36,8 @@
 		59684CDE213D05CB001FFE4C /* MemoListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListTVC.swift; sourceTree = "<group>"; };
 		59684CE0213D05F9001FFE4C /* MemoFromVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoFromVC.swift; sourceTree = "<group>"; };
 		59684CE2213D0606001FFE4C /* MemoReadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoReadVC.swift; sourceTree = "<group>"; };
+		7F62C45E50865C79145F528A /* Pods_PersonalMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PersonalMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7ECAE15A1E9B09B07093ADF /* Pods-PersonalMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalMemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PersonalMemo/Pods-PersonalMemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00157ADC70966A03886C63F7 /* Pods_PersonalMemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,8 +107,11 @@
 			children = (
 				59684CC8213CFB2C001FFE4C /* PersonalMemo */,
 				59684CD8213CFB2D001FFE4C /* Info.plist */,
+				5948C318214371B500699FE8 /* GoogleService-Info.plist */,
 				591D2D35213D0D04007D9335 /* PersonalMemo.xcdatamodeld */,
 				59684CC7213CFB2C001FFE4C /* Products */,
+				EF009D50E11F30BBDE265B59 /* Pods */,
+				B3E57E96415DE5475EB2F5D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,6 +161,23 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		B3E57E96415DE5475EB2F5D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F62C45E50865C79145F528A /* Pods_PersonalMemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF009D50E11F30BBDE265B59 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0AD8A6C3CBFE7E1A6CF4C257 /* Pods-PersonalMemo.debug.xcconfig */,
+				A7ECAE15A1E9B09B07093ADF /* Pods-PersonalMemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 59684CDB213CFB2D001FFE4C /* Build configuration list for PBXNativeTarget "PersonalMemo" */;
 			buildPhases = (
+				35F327D4B2E3FA6BCB9CFB9F /* [CP] Check Pods Manifest.lock */,
 				59684CC2213CFB2C001FFE4C /* Sources */,
 				59684CC3213CFB2C001FFE4C /* Frameworks */,
 				59684CC4213CFB2C001FFE4C /* Resources */,
+				9FA23345FA726DCD19DC25A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -210,14 +238,55 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				591D2D34213D0C97007D9335 /* Info.plist in Resources */,
 				59684CD7213CFB2D001FFE4C /* LaunchScreen.storyboard in Resources */,
+				5948C319214371B500699FE8 /* GoogleService-Info.plist in Resources */,
 				59684CD4213CFB2D001FFE4C /* Assets.xcassets in Resources */,
 				59684CCF213CFB2C001FFE4C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35F327D4B2E3FA6BCB9CFB9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PersonalMemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FA23345FA726DCD19DC25A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PersonalMemo/Pods-PersonalMemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PersonalMemo/Pods-PersonalMemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		59684CC2213CFB2C001FFE4C /* Sources */ = {
@@ -372,6 +441,7 @@
 		};
 		59684CDC213CFB2D001FFE4C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AD8A6C3CBFE7E1A6CF4C257 /* Pods-PersonalMemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -390,6 +460,7 @@
 		};
 		59684CDD213CFB2D001FFE4C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7ECAE15A1E9B09B07093ADF /* Pods-PersonalMemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
