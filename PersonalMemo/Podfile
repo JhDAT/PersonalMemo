@@ -7,4 +7,5 @@ target 'PersonalMemo' do
 
   # Pods for PersonalMemo
 pod 'Firebase/Core'
+pod 'Firebase/Auth'
 end
