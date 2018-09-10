@@ -13,10 +13,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sign InVC-->
         <scene sceneID="FQW-6a-TR0">
             <objects>
-                <viewController id="ZVU-Ze-F0t" sceneMemberID="viewController">
+                <viewController id="ZVU-Ze-F0t" customClass="SignInVC" customModule="PersonalMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gga-FO-gNE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,6 +46,9 @@
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="singInButton:" destination="ZVU-Ze-F0t" eventType="touchUpInside" id="YOW-bc-oVJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgB-X4-22q">
                                 <rect key="frame" x="30" y="385" width="315" height="31"/>
@@ -66,7 +69,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="ico_login_pass"/>
                                 </userDefinedRuntimeAttributes>
@@ -78,6 +81,7 @@
                             <constraint firstItem="5iR-cV-DxV" firstAttribute="top" secondItem="spV-eY-Vyz" secondAttribute="top" constant="30" id="6Sm-T1-ePX"/>
                             <constraint firstItem="tgB-X4-22q" firstAttribute="trailing" secondItem="nga-gw-XJd" secondAttribute="trailing" id="Ho3-G4-mqj"/>
                             <constraint firstItem="spV-eY-Vyz" firstAttribute="trailing" secondItem="tdH-9S-anB" secondAttribute="trailing" constant="20" id="PWK-Gv-CM4"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5iR-cV-DxV" secondAttribute="trailing" constant="20" symbolic="YES" id="arW-li-4EY"/>
                             <constraint firstItem="tgB-X4-22q" firstAttribute="top" secondItem="nga-gw-XJd" secondAttribute="bottom" constant="20" id="dXi-36-fdT"/>
                             <constraint firstItem="nga-gw-XJd" firstAttribute="top" secondItem="kf0-p1-UnI" secondAttribute="bottom" constant="30" id="dcq-Nk-p9n"/>
                             <constraint firstItem="kf0-p1-UnI" firstAttribute="leading" secondItem="tdH-9S-anB" secondAttribute="leading" id="iaB-zy-0mm"/>
@@ -91,15 +95,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="spV-eY-Vyz"/>
                     </view>
+                    <connections>
+                        <outlet property="email" destination="tdH-9S-anB" id="0aw-Vm-qke"/>
+                        <outlet property="password" destination="kf0-p1-UnI" id="8Sn-fB-1ll"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qu9-kU-d2l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1084" y="-69"/>
         </scene>
-        <!--Signup View Controller-->
+        <!--SignupVC-->
         <scene sceneID="AKc-Kg-rhb">
             <objects>
-                <viewController id="w9P-NJ-wlR" customClass="SignupViewController" customModule="PersonalMemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="w9P-NJ-wlR" customClass="SignupVC" customModule="PersonalMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Psf-Kp-nSK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -129,6 +137,9 @@
                                 <state key="normal" title="가입 요청">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="requestForSingup:" destination="w9P-NJ-wlR" eventType="touchUpInside" id="K4H-4R-sQy"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zIf-oq-TYg" customClass="SignTestField" customModule="PersonalMemo" customModuleProvider="target">
                                 <rect key="frame" x="20" y="244" width="335" height="50"/>
@@ -137,7 +148,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="ico_login_pass"/>
                                 </userDefinedRuntimeAttributes>
@@ -145,6 +156,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="DQv-hy-SaP" secondAttribute="trailing" constant="20" symbolic="YES" id="6MB-cZ-PQ2"/>
                             <constraint firstItem="yTl-AW-dLr" firstAttribute="leading" secondItem="Rg5-bs-fcl" secondAttribute="leading" constant="30" id="GPa-eh-ds0"/>
                             <constraint firstItem="DQv-hy-SaP" firstAttribute="leading" secondItem="Rg5-bs-fcl" secondAttribute="leading" constant="30" id="GQN-kp-TsF"/>
                             <constraint firstItem="DQv-hy-SaP" firstAttribute="top" secondItem="Rg5-bs-fcl" secondAttribute="top" constant="20" id="Slx-6z-sVW"/>
@@ -159,15 +171,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Rg5-bs-fcl"/>
                     </view>
+                    <connections>
+                        <outlet property="email" destination="WyL-c5-05N" id="b8Y-bA-VFQ"/>
+                        <outlet property="password" destination="zIf-oq-TYg" id="pav-OV-yuF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uIr-oL-Far" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1850" y="-61"/>
+            <point key="canvasLocation" x="1855" y="-69"/>
         </scene>
         <!--목록-->
         <scene sceneID="zkX-4z-BhO">
             <objects>
-                <tableViewController id="1Ko-9e-9oG" customClass="MemoListTVC" customModule="PersonalMemo" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MemoListTVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1Ko-9e-9oG" customClass="MemoListTVC" customModule="PersonalMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="eTC-QJ-n2A">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -476,7 +492,6 @@
         <!--Navigation Controller-->
         <scene sceneID="WZE-aR-Hsd">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dya-1c-V02" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MlR-9k-d9W" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9LX-XN-x1Q">
@@ -488,6 +503,7 @@
                         <segue destination="L1A-WG-URP" kind="relationship" relationship="rootViewController" id="2R3-hf-QMk"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dya-1c-V02" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-545" y="-61"/>
         </scene>

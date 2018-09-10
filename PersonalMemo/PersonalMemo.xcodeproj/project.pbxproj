@@ -13,7 +13,8 @@
 		591D2D37213D0D04007D9335 /* PersonalMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 591D2D35213D0D04007D9335 /* PersonalMemo.xcdatamodeld */; };
 		5948C319214371B500699FE8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5948C318214371B500699FE8 /* GoogleService-Info.plist */; };
 		5948C31B21437D3C00699FE8 /* SignTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5948C31A21437D3C00699FE8 /* SignTextField.swift */; };
-		5948C31D214385ED00699FE8 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5948C31C214385ED00699FE8 /* SignupViewController.swift */; };
+		5948C31D214385ED00699FE8 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5948C31C214385ED00699FE8 /* SignupVC.swift */; };
+		5948C31F214399EE00699FE8 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5948C31E214399EE00699FE8 /* SignInVC.swift */; };
 		59684CCA213CFB2C001FFE4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59684CC9213CFB2C001FFE4C /* AppDelegate.swift */; };
 		59684CCF213CFB2C001FFE4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59684CCD213CFB2C001FFE4C /* Main.storyboard */; };
 		59684CD4213CFB2D001FFE4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59684CD3213CFB2D001FFE4C /* Assets.xcassets */; };
@@ -30,7 +31,8 @@
 		591D2D36213D0D04007D9335 /* PersonalMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PersonalMemo.xcdatamodel; sourceTree = "<group>"; };
 		5948C318214371B500699FE8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "PersonalMemo/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5948C31A21437D3C00699FE8 /* SignTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignTextField.swift; sourceTree = "<group>"; };
-		5948C31C214385ED00699FE8 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		5948C31C214385ED00699FE8 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
+		5948C31E214399EE00699FE8 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		59684CC6213CFB2C001FFE4C /* PersonalMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59684CC9213CFB2C001FFE4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59684CCE213CFB2C001FFE4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -143,7 +145,8 @@
 		59684CE4213D0615001FFE4C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				5948C31C214385ED00699FE8 /* SignupViewController.swift */,
+				5948C31C214385ED00699FE8 /* SignupVC.swift */,
+				5948C31E214399EE00699FE8 /* SignInVC.swift */,
 				59684CDE213D05CB001FFE4C /* MemoListTVC.swift */,
 				59684CE2213D0606001FFE4C /* MemoReadVC.swift */,
 				59684CE0213D05F9001FFE4C /* MemoFromVC.swift */,
@@ -301,7 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5948C31D214385ED00699FE8 /* SignupViewController.swift in Sources */,
+				5948C31D214385ED00699FE8 /* SignupVC.swift in Sources */,
 				5948C31B21437D3C00699FE8 /* SignTextField.swift in Sources */,
 				59684CDF213D05CB001FFE4C /* MemoListTVC.swift in Sources */,
 				59684CE3213D0606001FFE4C /* MemoReadVC.swift in Sources */,
@@ -309,6 +312,7 @@
 				591D2D37213D0D04007D9335 /* PersonalMemo.xcdatamodeld in Sources */,
 				591D2D32213D0806007D9335 /* MemoData.swift in Sources */,
 				59684CE1213D05F9001FFE4C /* MemoFromVC.swift in Sources */,
+				5948C31F214399EE00699FE8 /* SignInVC.swift in Sources */,
 				59684CCA213CFB2C001FFE4C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
