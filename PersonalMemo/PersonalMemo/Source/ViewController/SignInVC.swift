@@ -20,6 +20,7 @@ class SignInVC: UIViewController {
         guard let email = email.text else { return }
         guard let password = password.text else { return }
         
+        
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] (user, error) in
             guard let strongSelf = self else { return }
             guard error == nil else { return
