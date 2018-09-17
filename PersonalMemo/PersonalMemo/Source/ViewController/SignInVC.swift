@@ -38,8 +38,8 @@ class SignInVC: UIViewController {
             guard let strongSelf = self else { return }
             switch isSuccess {
             case true:
-                let vc = strongSelf.storyboard?.instantiateViewController(withIdentifier: "MemoListTVC") as! MemoListTVC
-                strongSelf.navigationController?.pushViewController(vc, animated: true)
+                let vc = strongSelf.storyboard?.instantiateViewController(withIdentifier: "mainNavi")
+                strongSelf.present(vc!, animated: true, completion: nil)
             case false:
                 strongSelf.email.text = nil
                 strongSelf.password.text = nil
